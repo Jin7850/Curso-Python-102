@@ -11,7 +11,7 @@ user_name = config('USER_NAME')
 repository = config('REPOSITORY')
 
 local_repo_directory = os.path.join(os.getcwd(), repository)
-destination = 'main'
+destination = 'master'
 
 def clone_repo():
     if os.path.exists(local_repo_directory):
